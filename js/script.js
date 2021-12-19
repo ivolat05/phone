@@ -59,6 +59,7 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
         document.querySelector('.actives .video___inner-vidio').classList.add('video__play');
 
         function playBlock() {
+            document.querySelector('.video__play').muted = true;
             document.querySelector('.video__block-active').style.opacity = '0';
             document.querySelector('.video__play').play();
             document.querySelector('.video__play').muted = false;
