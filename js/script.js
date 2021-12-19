@@ -63,12 +63,17 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
             document.querySelector('.video__block-active').style.opacity = '0';
             document.querySelector('.video__play').play();
 
+
+        }
+        function playMus() {
+            document.querySelector('.video__play').muted = false;
         }
 
 
 
 
         setTimeout(playBlock, 1500);
+        setTimeout(playMus, 1800);
 
     })
 });
