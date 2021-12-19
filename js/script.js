@@ -3,6 +3,8 @@ function recipe() {
     let recipe = document.querySelector('.recipe');
     recipe.style.opacity = '1';
     recipe.style.zIndex = '3';
+    let recipeContainerBottom = document.querySelector('.recipe__container-bottom');
+    recipeContainerBottom.classList.add('recipe__container-bottom-active')
 }
 
 
@@ -34,7 +36,7 @@ function recipeNoneActive() {
 
 
 
-setTimeout(recipeNoneActive, 1000);
+setTimeout(recipeNoneActive, 2000);
 let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
 let popup = document.querySelectorAll('.popup'); // Само окно
 let openPopupButtons = document.querySelectorAll('.recipe__container'); // Кнопки для показа окна
@@ -58,7 +60,8 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
 
         function playBlock() {
             document.querySelector('.video__block-active').style.opacity = '0';
-            document.querySelector('.video__play').play();
+
+
             gtag('event', 'do', {
                 'event_category': 'internal',
                 'event_label': 'video_finished'
@@ -66,8 +69,13 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
 
         }
 
+        function video__play() {
+            document.querySelector('.video__play').play();
+        }
+
 
         setTimeout(playBlock, 1500);
+        setTimeout(video__play, 1700);
 
     })
 });
