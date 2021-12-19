@@ -63,6 +63,8 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
             document.querySelector('.video__block-active').style.opacity = '0';
             document.querySelector('.video__play').play();
             document.querySelector('.video__play').muted = false;
+            this.muted = false;
+
         }
 
 
