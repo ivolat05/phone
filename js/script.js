@@ -58,16 +58,19 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
         document.querySelector('.actives .video__block').classList.add('video__block-active');
         document.querySelector('.actives .video___inner-vidio').classList.add('video__play');
         document.querySelector('.video__play').volume = 0.0;
+        document.querySelector('.video__play').play();
+
         function playBlock() {
 
             document.querySelector('.video__block-active').style.opacity = '0';
-            document.querySelector('.video__play').play();
+
+            document.querySelector('.video__play').pause();
 
 
         }
 
         function playМ() {
-
+            document.querySelector('.video__play').play();
             document.querySelector('.video__play').volume = 0.9;
 
 
