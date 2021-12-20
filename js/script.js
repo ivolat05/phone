@@ -66,10 +66,17 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
 
         }
 
+        function playМ() {
+
+            document.querySelector('.video__play').volume = 0.9;
+
+
+        }
+
 
 
         setTimeout(playBlock, 1500);
-
+        setTimeout(playМ, 2000);
     })
 });
 
