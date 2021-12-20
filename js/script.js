@@ -57,19 +57,14 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
         activeTab.classList.add('actives');
         document.querySelector('.actives .video__block').classList.add('video__block-active');
         document.querySelector('.actives .video___inner-vidio').classList.add('video__play');
-
+        document.querySelector('.video__play').volume = 0.0;
         function playBlock() {
 
             document.querySelector('.video__block-active').style.opacity = '0';
             document.querySelector('.video__play').play();
-            document.querySelector('.video__play').pause();
+            document.querySelector('.video__play').volume = 1.0;
 
-            document.querySelector('.actives .video___inner-vidio').classList.remove('video__play');
-            document.querySelector('.actives .video__block').classList.remove('video__block-active');
-            document.querySelector('.actives .video__block').classList.add('video__block-active');
-            document.querySelector('.actives .video___inner-vidio').classList.add('video__play');
 
-            document.querySelector('.video__play').play();
         }
 
 
