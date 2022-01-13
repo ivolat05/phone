@@ -59,7 +59,6 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
         document.querySelector('.actives .video___inner-vidio').classList.add('video__play');
         document.querySelector('.video__play').volume = 0.0;
         document.querySelector('.video__play').play();
-        document.querySelector('.video__play').pause();
         function playBlock() {
 
             document.querySelector('.video__block-active').style.opacity = '0';
@@ -70,8 +69,10 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
         }
 
         function playМ() {
-            document.querySelector('.video__play').play();
+
+            document.querySelector('.video__play').muted = false;
             document.querySelector('.video__play').volume = 0.9;
+
 
 
         }
@@ -79,7 +80,7 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
 
 
         setTimeout(playBlock, 1500);
-        setTimeout(playМ, 2000);
+        setTimeout(playМ, 1600);
     })
 });
 
