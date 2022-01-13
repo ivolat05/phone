@@ -80,7 +80,7 @@ openPopupButtons.forEach((button) => { // Перебираем все кнопк
 
 
         setTimeout(playBlock, 1500);
-        setTimeout(playМ, 1600);
+        setTimeout(playМ, 1550);
     })
 });
 
