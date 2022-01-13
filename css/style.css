@@ -147,7 +147,7 @@ table {
 }
 
 .shell__logo img {
-    width: 18vw;
+    width: 14vw;
 }
 
 .shell__inner {
@@ -502,13 +502,13 @@ table {
     color: black;
     text-align: center;
     width: 47vw;
-    background: #bdd229;
+    background: url("../img/background.png") repeat center center;
     margin-bottom: 100px;
 }
 
 .muka__title {
     font-size: 13vw;
-    color: black;
+    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -537,7 +537,7 @@ table {
 .muka__img {
     display: block;
     width: 16%;
-    border-right: 1px dotted black;
+    border-right: 1px dotted #fff;
 }
 
 .muka__dots {
@@ -547,7 +547,7 @@ table {
 
 .muka__dots::before,
 .muka__dots::after {
-    background-color: black;
+    background-color: #fff;
     position: absolute;
     content: "";
     display: block;
@@ -605,7 +605,7 @@ table {
 .recipe__img {
     display: block;
     width: 80%;
-    height: 12vh;
+
     margin: 0 auto 5px auto;
 }
 
@@ -827,4 +827,15 @@ body {
     transform: translateY(0px);
     opacity: 1;
     z-index: 3;
+}
+.muka__info {
+    color: #fff;
+}
+
+.muka__kg {
+    color: #fff;
+}
+
+.video___inner-vidio {
+    border-radius: 5px 5px 0 0;
 }
